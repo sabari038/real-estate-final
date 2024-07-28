@@ -1,10 +1,10 @@
 import React from 'react';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 
-import HomePage from './components/HomePage';
-import RealEstateSignin from './components/RealEstateSignin';
-import RealEstateSignup from './components/RealEstateSignup';
-import AdminSignInPage from './components/AdminSignInPage';
+import HomePage from './components/pages/HomePage';
+import RealEstateSignin from './components/pages/RealEstateSignin';
+import RealEstateSignup from './components/pages/RealEstateSignup';
+import AdminSignInPage from './components/pages/AdminSignInPage';
 import AdminComponent from './components/admin/AdminComponent';
 
 const App = () => {
