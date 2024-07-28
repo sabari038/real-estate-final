@@ -1,0 +1,64 @@
+.agent-container {
+    padding: 20px;
+    background-color: #f5f7fa;
+    border-radius: 8px;
+    max-width: 800px;
+    margin: 0 auto;
+  }
+  
+  .agent-header {
+    font-size: 1.8rem;
+    color: #333;
+    margin-bottom: 20px;
+  }
+  
+  .agent-list, .agent-add {
+    margin-bottom: 30px;
+  }
+  
+  .agent-list-header, .agent-add-header {
+    font-size: 1.5rem;
+    color: #555;
+    margin-bottom: 15px;
+  }
+  
+  .agent-list-ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .agent-list-item {
+    background-color: #fff;
+    padding: 15px;
+    margin-bottom: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+  }
+  
+  .agent-list-item-name, .agent-list-item-email, .agent-list-item-phone {
+    margin: 5px 0;
+  }
+  
+  .agent-add-input {
+    display: block;
+    width: calc(100% - 22px);
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+  }
+  
+  .agent-add-button {
+    padding: 10px 15px;
+    border: none;
+    border-radius: 4px;
+    font-size: 1rem;
+    cursor: pointer;
+    background-color: #4caf50;
+    color: #fff;
+  }
+  
+  .agent-add-button:hover {
+    background-color: #45a049;
+  }
+  

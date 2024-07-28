@@ -14,7 +14,7 @@ const AdminSignInPage = () => {
 
     if (email === 'admin@skcet.ac.in' && password === 'admin') {
       // Redirect to admin dashboard
-      navigate('/dashboard');
+      navigate('/admin-dashboard');
     } else {
       setError('Invalid email or password');
     }

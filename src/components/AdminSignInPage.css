@@ -1,6 +1,9 @@
 body {
   margin: 0;
   font-family: Arial, sans-serif;
+  
+}
+.AdminSignInPage{
   background-image: url("../images/adminbg.jpg");
   background-size: auto;
   
