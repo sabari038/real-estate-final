@@ -1,0 +1,96 @@
+.mylistwhole{
+  background-color: #333;
+}
+
+.my-listing-container {
+  padding: 20px;
+  background-color: #ffffff; /* Dark background for the container */
+  border-radius: 8px;
+  max-width: 800px;
+  margin: 0 auto;
+  color: white; /* White text color */
+}
+
+.my-listing-header {
+  font-size: 1.8rem;
+  color: #ff9900; /* Orange color for header */
+  margin-bottom: 20px;
+}
+
+.my-listing-description {
+  font-size: 1.2rem;
+  color: #ccc; /* Light gray color for description */
+  margin-bottom: 30px;
+}
+
+.my-listing-list {
+  margin-bottom: 30px;
+}
+
+.my-listing-list-header {
+  font-size: 1.5rem;
+  color: #ff9900; /* Orange color for list header */
+  margin-bottom: 15px;
+}
+
+.my-listing-list-ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.my-listing-list-item {
+  background-color: #333; /* Darker background for list items */
+  padding: 15px;
+  margin-bottom: 10px;
+  border: 1px solid #333; /* Dark border */
+  border-radius: 5px;
+}
+
+.my-listing-view-item, .my-listing-edit-form {
+  display: flex;
+  flex-direction: column;
+}
+
+.my-listing-item-category, .my-listing-item-address, .my-listing-item-price {
+  margin: 5px 0;
+  color: #ffffff; /* Light gray color for item details */
+}
+
+.my-listing-edit-input {
+  display: block;
+  width: calc(100% - 22px);
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #333; /* Dark border for input fields */
+  border-radius: 5px;
+  color: #000000; /* Dark text color for inputs */
+}
+
+.my-listing-edit-button, .my-listing-delete-button, .my-listing-save-button {
+  padding: 10px 15px;
+  border: none;
+  border-radius: 4px;
+  font-size: 1rem;
+  cursor: pointer;
+  margin-top: 10px;
+  transition: background 0.3s, opacity 0.3s;
+}
+
+.my-listing-edit-button {
+  background-color: #4caf50; /* Green for edit button */
+  color: #fff;
+}
+
+.my-listing-delete-button {
+  background-color: #ff5c5c; /* Red for delete button */
+  color: #fff;
+}
+
+.my-listing-save-button {
+  background-color: #ff9900; /* Orange for save button */
+  color: #fff;
+}
+
+.my-listing-edit-button:hover, .my-listing-delete-button:hover, .my-listing-save-button:hover {
+  opacity: 0.9; /* Slightly transparent on hover */
+}

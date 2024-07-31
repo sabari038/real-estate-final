@@ -1,0 +1,91 @@
+body {
+  margin: 0;
+    
+  
+}
+.AdminSignInPage{
+  background-image: url("../Images/adminbg.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.ad-container {
+  display: flex;
+  height: 100vh;
+  margin-left: 30px;
+  padding-top: 10px;
+}
+
+.ad-signin-form {
+  height: 400px;
+  color: #ffffff;
+  padding-top: 60px;
+  background-color: transparent;
+  backdrop-filter: blur(20px);
+  border: darkorange 2px solid;
+  border-radius: 30px;
+  color: orange;
+  width: 550px;
+  margin-top: 130px;
+  margin-right: 140px;
+  margin-left: 230px;
+  margin-bottom: 240px;
+  padding-left: 50px;
+}
+
+.ad-signin-form h1 {
+  margin-bottom: 1rem;
+}
+
+.ad-signin-form label {
+  display: block;
+  margin: 0.5rem 0;
+}
+
+.ad-signin-form input[type="email"],
+.ad-signin-form input[type="password"] {
+  width: 75%;
+  color: #ffffff;
+  padding: 10px 15px;
+  font-size: 16px;
+  border: none;
+  border: 2px solid #ccc;
+  transition: border-bottom 0.3s ease;
+  background: none;
+  padding-left: 40px;
+  border-radius: 15px;
+}
+
+.ad-signin-form input[type="email"]:focus, 
+.ad-signin-form input[type="password"]:focus {
+    border: 2px solid darkorange;
+    outline: none;
+}
+
+.ad-signin-form button {
+  margin-top: 20px;
+  margin-left: 75px;
+  margin-top: 25px;
+  width: 250px;
+  padding: 10px;
+  background-color: transparent;
+  color: white;
+  border: 2px darkorange solid;
+  transition: 0.3s;
+}
+
+.ad-signin-form button:hover {
+  background-color: darkorange;
+  color: black;
+}
+
+.image-section {
+  width: 50%;
+}
+
+.image-section img {
+  width: 400px;
+  height: 350px;
+  object-fit: cover;
+  margin-top: 150px;
+}
