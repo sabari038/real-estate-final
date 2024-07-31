@@ -8,7 +8,7 @@ const Logout = () => {
   const handleLogout = () => {
     // Add logic to clear user session or tokens here
     // For example, localStorage.clear() if tokens are stored in localStorage
-    navigate('/login'); // Redirect to login page
+    navigate('/admin'); // Redirect to login page
   };
 
   return (

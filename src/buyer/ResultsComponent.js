@@ -12,8 +12,8 @@ const ResultsComponent = ({ results, onSelectProperty }) => {
           <div className="result-price">{result.sale ? `Buy at ${result.price}` : `Rent at ${result.price}`}</div>
           <div className="result-agent">
             <strong>Agent Details:</strong>
-            <div>{result.agent.name}</div>
-            <div>{result.agent.contact}</div>
+            <div>{result.agent?.name}</div>
+            <div>{result.agent?.contact}</div>
           </div>
           <div className="result-details">
             <strong>Details:</strong>
