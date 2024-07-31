@@ -1,0 +1,93 @@
+.signup{
+    margin: 100px 100px;
+}
+
+.signup-container {
+    width: 100%;
+    padding: 30px;
+    background: #ffffff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    backdrop-filter: blur(20px);
+}
+
+.signup-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.signup-form {
+    width: 50%;
+    margin-left: 220px;
+}
+
+.signup-form-title {
+    font-size: 34px;
+    color: #333;
+    text-align: center;
+    font-weight: bold;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.signup-register-form {
+    padding-left: 20px;
+}
+
+.signup-form-group {
+    display: flex;
+    align-items: center;
+    padding-bottom: 15px;
+}
+
+.signup-form-group input[type="text"], 
+.signup-form-group input[type="email"], 
+.signup-form-group input[type="password"] {
+    width: 100%;
+    padding: 25px 35px;
+    font-size: 16px;
+    border: none;
+    border-bottom: 2px solid #ccc;
+    transition: border-bottom 0.3s ease;
+    background: none;
+}
+
+.signup-form-group input[type="text"]:focus, 
+.signup-form-group input[type="email"]:focus, 
+.signup-form-group input[type="password"]:focus {
+    border-bottom: 5px solid #0d6efd;
+    outline: none;
+}
+
+.label-agree-term span {
+    margin-right: 10px;
+}
+
+.term-service {
+    color: #0d6efd;
+}
+
+.signup-form-button {
+    text-align: right;
+}
+
+.form-submit {
+    padding: 10px 30px;
+    font-size: 16px;
+    border: none;
+    background: #0d6efd;
+    color: #fff;
+    border-radius: 5px;
+    width: 100%;
+    transition: background 0.3s ease;
+}
+
+.form-submit:hover {
+    background: #3b3b3b;
+    color: #ffffff;
+}
+
+.signup-image {
+    text-align: center;
+}
