@@ -12,7 +12,7 @@ const Exploreproperty = () => {
       <p className="section-subtitle" id="Properties">Explore Properties</p>
       <div className="cardgroup">
         <Card className="card expcard">
-          <Card.Img variant="top" src={Plot} className="cimg" />
+          <Card.Img variant="top" src={Plot} className="cimg" path="/properties/plot&land" />
           <Card.Body>
             <Card.Title className='exphead'>PLOTS AND LANDS</Card.Title>
             <Card.Text className='expbody'>
@@ -23,7 +23,7 @@ const Exploreproperty = () => {
           </Card.Body>
         </Card>
         <Card className="card expcard">
-          <Card.Img variant="top" src={Villa} className="cimg" />
+          <Card.Img variant="top" src={Villa} className="cimg" path="/properties/villa"/>
           <Card.Body>
             <Card.Title className='exphead'>INDIVIDUAL VILLAS</Card.Title>
             <Card.Text className='expbody'>
