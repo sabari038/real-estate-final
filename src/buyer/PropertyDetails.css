@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 .property-details-container {
   border: 1px solid #ccc;
   padding: 20px;
@@ -25,3 +26,32 @@
   margin-bottom: 10px;
   color: #333;
 }
+=======
+.property-details-container {
+  border: 1px solid #ccc;
+  padding: 20px;
+  margin-top: 20px;
+  width: 80%;
+  border-radius: 10px;
+  background: white;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s;
+}
+
+.property-details-container:hover {
+  transform: translateY(-10px);
+}
+
+.property-details-container h2 {
+  margin-bottom: 10px;
+  color: #007bff;
+}
+
+.property-details-container .property-size,
+.property-details-container .property-price,
+.property-details-container .property-agent,
+.property-details-container .property-details {
+  margin-bottom: 10px;
+  color: #333;
+}
+>>>>>>> cc383eb2b8b88eeb384a8ebf824559dd6a19b93f
