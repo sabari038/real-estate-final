@@ -20,7 +20,6 @@ const App = () => {
           <Route path='/signup' element={<RealEstateSignup />} />
           <Route path='/properties/:type' element={<PropertyList />} />
           <Route path='/prop' element={<BuyerComponent />} />
-          {/* Add other routes as needed */}
         </Routes>
       </BrowserRouter>
     </div>

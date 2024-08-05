@@ -8,6 +8,7 @@ import logo from '../Images/Estate-Hub.png';
 import banner from '../Images/Homepagebanner.jpg';
 import Exploreproperty from './Exploreproperty';
 import './HomePage.css'; // Ensure your CSS file is included
+import SellersRatedPage from './SellersRatedPage';
 
 const Homepage = () => {
   const navigate = useNavigate(); // Initialize navigate
@@ -33,6 +34,7 @@ const Homepage = () => {
               <li><a href="#service">Our Services</a></li>
               <li><a href="#Amenities">Amenities</a></li>
               <li><a href="#Properties">Explore Properties</a></li>
+              <li><a href="#Properties">Contact Us</a></li>
               <li><a href="#Team">The Team</a></li>
             </ul>
           </div>
@@ -57,6 +59,7 @@ const Homepage = () => {
         <Services />
         <Amenities />
         <Exploreproperty />
+        <SellersRatedPage/>
         <Team />
       </div>
     </div>

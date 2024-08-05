@@ -1,13 +1,19 @@
 import React, { useState } from 'react';
+import axios from 'axios';
 import './AddListing.css';
 
 const AddListing = () => {
   const [listingData, setListingData] = useState({
-    title: '',
-    category: '',
-    description: '',
+    location: '',
+    bhk: '',
+    propertyType: '',
+    size: '',
     price: '',
-    address: '',
+    sale: false,
+    rent: false,
+    details: '',
+    agentName: '',
+    agentContact: '',
   });
 
   const handleChange = (e) => {
@@ -18,10 +24,24 @@ const AddListing = () => {
     });
   };
 
+  const handleCheckboxChange = (e) => {
+    const { name, checked } = e.target;
+    setListingData({
+      ...listingData,
+      [name]: checked,
+    });
+  };
+
   const handleSubmit = (e) => {
     e.preventDefault();
-    // Logic to add listing
-    console.log('Listing Data:', listingData);
+    // Add listing logic using axios
+    axios.post('http://localhost:8080/api/properties/add', listingData)
+      .then(response => {
+        console.log('Listing added successfully:', response.data);
+      })
+      .catch(error => {
+        console.error('There was an error adding the listing:', error);
+      });
   };
 
   return (
@@ -29,30 +49,50 @@ const AddListing = () => {
       <h1>Add Listing</h1>
       <form onSubmit={handleSubmit}>
         <label>
-          Title:
-          <input type="text" name="title" value={listingData.title} onChange={handleChange} required />
+          Location:
+          <input type="text" name="location" value={listingData.location} onChange={handleChange} required />
         </label>
         <label>
-          Category:
-          <select name="category" value={listingData.category} onChange={handleChange} required>
-            <option value="">Select Category</option>
+          BHK:
+          <input type="text" name="bhk" value={listingData.bhk} onChange={handleChange} required />
+        </label>
+        <label>
+          Property Type:
+          <select name="propertyType" value={listingData.propertyType} onChange={handleChange} required>
+            <option value="">Select Property Type</option>
             <option value="Apartment">Apartment</option>
-            <option value="Office">Office</option>
             <option value="House">House</option>
-            <option value="Retail">Retail</option>
+            <option value="Flat">Flat</option>
+            <option value="Villa">Villa</option>
           </select>
         </label>
         <label>
-          Description:
-          <textarea name="description" value={listingData.description} onChange={handleChange} required></textarea>
+          Size:
+          <input type="text" name="size" value={listingData.size} onChange={handleChange} required />
         </label>
         <label>
           Price:
           <input type="number" name="price" value={listingData.price} onChange={handleChange} required />
         </label>
         <label>
-          Address:
-          <input type="text" name="address" value={listingData.address} onChange={handleChange} required />
+          Sale:
+          <input type="checkbox" name="sale" checked={listingData.sale} onChange={handleCheckboxChange} />
+        </label>
+        <label>
+          Rent:
+          <input type="checkbox" name="rent" checked={listingData.rent} onChange={handleCheckboxChange} />
+        </label>
+        <label>
+          Details:
+          <textarea name="details" value={listingData.details} onChange={handleChange} required></textarea>
+        </label>
+        <label>
+          Agent Name:
+          <input type="text" name="agentName" value={listingData.agentName} onChange={handleChange} required />
+        </label>
+        <label>
+          Agent Contact:
+          <input type="text" name="agentContact" value={listingData.agentContact} onChange={handleChange} required />
         </label>
         <button type="submit">Add Listing</button>
       </form>

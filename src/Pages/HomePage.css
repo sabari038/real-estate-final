@@ -1191,3 +1191,55 @@
   cursor: pointer;
 }
 
+/* SellersRatedPage.css */
+
+.sellers-rated-container {
+  background-color: #000;
+  color: #FFA500;
+  padding: 20px;
+  text-align: center;
+  min-height: 100vh;
+}
+
+.sellers-rated-container h1 {
+  color: #FFA500;
+}
+
+.sellers-rated-container .highlight {
+  color: #FFFFFF;
+}
+
+.sellers-rated-container .subtitle {
+  color: #CCCCCC;
+}
+
+.sellers-rated-container .features {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.sellers-rated-container .feature-card {
+  flex: 1 0 21%;
+  margin: 10px;
+  background-color: #1a1a1a;
+  padding: 20px;
+  border-radius: 10px;
+  color: #FFA500;
+  text-align: left;
+}
+
+.sellers-rated-container .feature-card h3 {
+  margin-bottom: 10px;
+}
+
+.sellers-rated-container .feature-card p {
+  color: #CCCCCC;
+}
+
+.sellers-rated-container .icon {
+  font-size: 2em;
+  margin-bottom: 10px;
+  color: #FFA500;
+}

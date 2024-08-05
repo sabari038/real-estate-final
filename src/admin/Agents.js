@@ -1,23 +1,19 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
+import axios from 'axios';
 import './Agents.css';
 
 const Agents = () => {
-  const [agents, setAgents] = useState([
-    { id: 1, name: 'John Doe', email: 'john@example.com', phone: '123-456-7890' },
-    { id: 2, name: 'Jane Smith', email: 'jane@example.com', phone: '098-765-4321' },
-  ]);
+  const [agents, setAgents] = useState([]);
 
-  const [newAgent, setNewAgent] = useState({ name: '', email: '', phone: '' });
-
-  const handleChange = (e) => {
-    const { name, value } = e.target;
-    setNewAgent((prev) => ({ ...prev, [name]: value }));
-  };
-
-  const handleAddAgent = () => {
-    setAgents((prev) => [...prev, { id: agents.length + 1, ...newAgent }]);
-    setNewAgent({ name: '', email: '', phone: '' });
-  };
+  useEffect(() => {
+    axios.get('http://localhost:8080/api/users/all')
+      .then(response => {
+        setAgents(response.data);
+      })
+      .catch(error => {
+        console.error('Error fetching agents:', error);
+      });
+  }, []);
 
   return (
     <div className="agent-container">
@@ -34,7 +30,6 @@ const Agents = () => {
           ))}
         </ul>
       </div>
-      
     </div>
   );
 };
