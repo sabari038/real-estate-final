@@ -1,0 +1,113 @@
+  .admin-container {
+  display: flex;
+  min-height: 100vh;
+  overflow: hidden;
+  font-family: Arial, sans-serif;
+  color: white;
+}
+
+.sidebar {
+  width: 250px;
+  background-color: #000; /* Black background for sidebar */
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.profile-section {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.profile-image {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  margin-bottom: 10px;
+}
+
+.profile-name {
+  margin: 0;
+  font-size: 1.2em;
+}
+
+.role {
+  font-size: 0.9em;
+  color: #ff9900; /* Orange color for role */
+}
+
+.menu {
+  width: 100%;
+}
+
+.menu a {
+  display: block;
+  padding: 10px 15px;
+  margin: 5px 0;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+  background-color: #333; /* Dark background for menu items */
+  transition: background 0.3s;
+}
+
+.menu a:hover {
+  background-color: #ff9900; /* Orange color on hover */
+}
+
+.dropdown {
+  width: 100%;
+  position: relative;
+}
+
+.dropdown-button {
+  width: 100%;
+  padding: 10px 15px;
+  margin: 5px 0;
+  color: white;
+  background: #333; /* Dark background for dropdown button */
+  border: none;
+  text-align: left;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: background 0.3s;
+}
+
+.dropdown-button:hover {
+  background-color: #ff9900; /* Orange color on hover */
+}
+
+.dropdown-content {
+  display: none;
+  flex-direction: column;
+  position: absolute;
+  background-color: #333; /* Dark background for dropdown content */
+  width: 100%;
+  z-index: 1;
+  border-radius: 5px;
+}
+
+.dropdown-button:focus + .dropdown-content,
+.dropdown-content:hover {
+  display: flex;
+}
+
+.dropdown-content a {
+  padding: 10px 15px;
+  margin: 0;
+  color: white;
+  border-radius: 0;
+  background-color: #333; /* Dark background for dropdown items */
+  transition: background 0.3s;
+}
+
+.dropdown-content a:hover {
+  background-color: #ff9900; /* Orange color on hover */
+}
+
+.content {
+  flex-grow: 1;
+  background-color: #fff;
+  color: #000; /* Black text for content */
+}

@@ -1,0 +1,22 @@
+/* PropertyList.css */
+.property-list {
+    padding: 20px;
+    max-width: 800px;
+    margin: 0 auto;
+  }
+  
+  .property-list h2 {
+    margin-bottom: 20px;
+  }
+  
+  .property-list ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .property-list li {
+    margin-bottom: 15px;
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 10px;
+  }
+  
