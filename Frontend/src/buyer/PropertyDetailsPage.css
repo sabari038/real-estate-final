@@ -1,0 +1,52 @@
+.property-details-page {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2rem;
+  }
+  
+  .property-image {
+    width: 100%;
+    max-width: 600px;
+    margin-bottom: 2rem;
+    border-radius: 10px;
+  }
+  
+  .property-details-container {
+    width: 100%;
+    max-width: 600px;
+    background: #fff;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .property-details-container h2 {
+    margin-top: 0;
+  }
+  
+  .property-details-container div {
+    margin: 0.5rem 0;
+  }
+  
+  .property-features,
+  .property-amenities {
+    margin-top: 1rem;
+  }
+  
+  .property-features h3,
+  .property-amenities h3 {
+    margin-bottom: 0.5rem;
+  }
+  
+  .property-features ul,
+  .property-amenities ul {
+    list-style-type: disc;
+    padding-left: 20px;
+  }
+  
+  .property-features li,
+  .property-amenities li {
+    margin: 0.3rem 0;
+  }
+  

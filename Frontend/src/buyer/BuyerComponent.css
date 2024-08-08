@@ -1,0 +1,55 @@
+.buyer-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  background-color: #e0f7fa;
+}
+
+.property-details-container {
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin-top: 20px;
+  width: 100%;
+  max-width: 800px;
+  box-sizing: border-box;
+}
+
+.results-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  gap: 20px;
+  width: 100%;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.result-card {
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  transition: transform 0.3s;
+  width: calc(33.333% - 20px);
+  box-sizing: border-box;
+}
+
+.result-card:hover {
+  transform: translateY(-5px);
+}
+
+@media (max-width: 768px) {
+  .result-card {
+    width: calc(50% - 20px);
+  }
+}
+
+@media (max-width: 480px) {
+  .result-card {
+    width: 100%;
+  }
+}
